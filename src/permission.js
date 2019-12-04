@@ -5,11 +5,11 @@ import 'nprogress/nprogress.css'// Progress 进度条样式
 import { Message } from 'element-ui'
 import { getToken } from '@/utils/auth' // 验权
 
-const whiteList = ['/home'] // 不重定向白名单
+const whiteList = ['/login'] // 不重定向白名单
 router.beforeEach((to, from, next) => {
   NProgress.start()
-  next();
-/*  if (getToken()) {
+  // next();
+  if (getToken()) {
     if (to.path === '/login') {
       next({ path: '/' })
       NProgress.done() // if current page is dashboard will not trigger	afterEach hook, so manually handle it
@@ -34,7 +34,7 @@ router.beforeEach((to, from, next) => {
       next('/login')
       NProgress.done()
     }
-  }*/
+  }
 })
 
 router.afterEach(() => {
