@@ -39,7 +39,7 @@
 <!--      <div style="text-align: center">mall全套学习教程连载中！</div>-->
 <!--      <div style="text-align: center;margin-top: 5px"><span class="color-main">关注公号</span>，第一时间获取。</div>-->
 <!--    </el-card>-->
-    <div class="un-handle-layout">
+    <!--<div class="un-handle-layout">
       <div class="layout-title">待处理事务</div>
       <div class="un-handle-content">
         <el-row :gutter="20">
@@ -103,8 +103,8 @@
           </el-col>
         </el-row>
       </div>
-    </div>
-    <div class="overview-layout">
+    </div>-->
+    <!--<div class="overview-layout">
       <el-row :gutter="20">
         <el-col :span="12">
           <div class="out-border">
@@ -145,9 +145,9 @@
           </div>
         </el-col>
       </el-row>
-    </div>
+    </div>-->
     <div class="statistics-layout">
-      <div class="layout-title">订单统计</div>
+      <div class="layout-title">支付统计</div>
       <el-row>
         <el-col :span="4">
           <div style="padding: 20px">
